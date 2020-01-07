@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.signFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:id="@+id/frg">
+
+        <TextView
+            android:id="@+id/fragmentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:shadowColor="#050"
+            android:gravity="center"
+            android:text="@string/joinGroup"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_height="400dp"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/groupId"
+            style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:hint="@string/groupid"
+            android:inputType="number"
+            android:outlineAmbientShadowColor="#C9BFBF"
+            android:outlineSpotShadowColor="#00A04B4B"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+
+        <EditText
+            android:id="@+id/Name"
+            style="@style/Widget.MaterialComponents.TextInputEditText.OutlinedBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupId"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#fff"
+            android:breakStrategy="high_quality"
+            android:ems="10"
+            android:fontFamily="sans-serif"
+            android:hint="@string/user_name"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textColorHint="#000" />
+
+        <Button
+            android:id="@+id/open"
+            android:layout_width="71dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="29dp"
+            android:backgroundTint="#050"
+            android:text="@string/join"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+
+    </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
